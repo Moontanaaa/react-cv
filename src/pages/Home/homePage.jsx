@@ -1,4 +1,5 @@
-import './homePage.css'
+import './homePage.css';
+import AboutComponent from '../../components/About/AboutComponent';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           </div>
         </div>
       </div>
+      <AboutComponent />
     </>
   )
 }
