@@ -5,9 +5,9 @@ function App() {
 
   return (
     <>
-      <div class="responsive-container">
-        <div class="background-image">
-          <div class="centered">
+      <div className="responsive-container">
+        <div className="background-image">
+          <div className="centered">
             <h1>Bonjour, je suis John Doe</h1>
             <h2>Développeur web full stack</h2>
             <button>En savoir plus</button>
