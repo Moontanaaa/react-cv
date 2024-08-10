@@ -1,28 +1,36 @@
-import { Link, Route, Routes } from "react-router-dom";
-import "./headerComponent.css";
-import HomePage from '../../pages/Home/homePage';
+
+import { Link } from 'react-router-dom';
 
 function NavBar() {
-    return (
-        <nav className="navbar navbar-expand-lg bg-secondary text-light text-uppercase fixed-top" id="mainNav">
-            <div className="container">
-                <a className="navbar-brand text-light" href="#page-top">John Doe</a>
-                <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <i className="fas fa-bars"></i>
-                </button>
-                <div className="navbar-collapse collapse" id="navbarResponsive">
-                    <ul id="ulnav" className="navbar-nav ms-auto">
-                        <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" to="/">Accueil</Link></li>
-                        <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" to="/realisation">Réalisation</Link></li>
-                        <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" to="/blogs">Blogs</Link></li>
-                        <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" to="/services">Services</Link></li>
-                        <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" to="/contact">Contact</Link></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    )
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid ms-4">
+        <a className="navbar-brand" href="#">JOHN DOE</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto me-4">
+            <li className="nav-item">
+              <Link className="nav-link mx-3" to="/">ACCUEIL</Link>
+            </li>
+            <li className="nav-item mx-3">
+              <Link className="nav-link" to="/Services">SERVICES</Link>
+            </li>
+            <li className="nav-item mx-3">
+              <Link className="nav-link" to="/Realisations">REALISATION</Link>
+            </li>
+            <li className="nav-item mx-3">
+              <Link className="nav-link" to="/Blogs">BLOG</Link>
+            </li>
+            <li className="nav-item mx-3">
+              <Link className="nav-link" to="/Contact">ME CONTACTER</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default NavBar
+export default NavBar;

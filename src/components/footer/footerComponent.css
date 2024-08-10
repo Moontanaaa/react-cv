@@ -1,0 +1,26 @@
+.footer2 {
+    
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+ }
+ .p{
+    background-color: #d2d2d2;
+ }
+ .footer1 {
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: black;
+    text-align: start;
+    padding: 20px;
+ }
+.footer1 li::before{
+        content: ">";
+        padding-right: 8px;
+        color: blue;
+}
