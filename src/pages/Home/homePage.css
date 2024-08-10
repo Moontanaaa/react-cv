@@ -1,0 +1,90 @@
+/* Conteneur global */
+.responsive-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Remplit toute la hauteur de la fenêtre */
+  overflow: hidden;
+}
+
+/* Conteneur de l'image en fond */
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Centrage du texte */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.centered h1,
+.centered h2 {
+  margin: 0.5em 0;
+}
+
+.centered h1 {
+  font-size: 60px;
+}
+
+.centered h2 {
+  font-size: 40px;
+}
+
+.centered button {
+  padding: 0.8em 2em;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
+}
+
+.centered button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries pour les smartphones */
+@media screen and (max-width: 767px) {
+  .background-image {
+    background-image: url('../../assets/img/hero-bg-mobile.jpg');
+  }
+
+  .centered h1 {
+    font-size: 1.5em;
+  }
+
+  .centered h2 {
+    font-size: 1.2em;
+  }
+
+  .centered button {
+    padding: 0.6em 1.5em;
+    font-size: 0.9em;
+  }
+}
+
+/* Media Queries pour les tablettes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .background-image {
+    background-image: url('../../assets/img/hero-bg-tablette.jpg');
+  }
+}
+
+/* Media Queries pour les écrans de bureau */
+@media screen and (min-width: 1024px) {
+  .background-image {
+    background-image: url('../../assets/img/hero-bg.jpg');
+  }
+}
