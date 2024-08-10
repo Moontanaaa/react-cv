@@ -8,6 +8,7 @@ import ServicePage from './pages/service/servicePage';
 import Realisation from './pages/realisation/realisationPage';
 import Header from './components/header/headerComponent';
 import Contact from './pages/contact/contactPage';
+import LegalMention from './pages/legal mention/legalMention';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -15,7 +16,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter />
-    <ServicePage />
+    <LegalMention />
     <BrowserRouter />
   </StrictMode>,
 )
