@@ -1,8 +1,6 @@
-# React + Vite
+# CEF-React-CV
+Devoir du CEF(Centre Européen de Formation) où l'on doit créer un Curriculum Vitea sous React+Bootstrap.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+L'application React se trouve dans le dossier react-cv.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pour lancer le projet il faut le récupérer sur github avec un pull request puis lancer "npm start" ou "pnpm start" une fois que vous vous trouvez dans le dossier.
